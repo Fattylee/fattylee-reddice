@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name ="viewport" content ="width=device-width, initial-scale=1">
+  <title>Reddice React and Redux App</title>
+<style> 
+body {
+    direction: ltl;
+}
+.flex-container {
+    display: -webkit-flex;
+    display: flex;
+   /* flex-direction: column;  column, row, row-reverse */ 
+	justify-content: space-between y ;
+	align-items:  Center  y /* stretch baseline  center flex-start flex-end */ ;
+	flex-wrap: wrap h;
+    width: vw;
+    height: vh;
+    background-color: lightgrey;
+    -webkit-flex-direction : row-reverse h ;
+    -webkit-align-content: baseline;
+}
+
+.flex-item {
+    background-color: cornflowerblue;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+.flex-item:nth-child(4){
+display : flex;
+background : green ;
+}
+.sub {
+width: 40px;
+height: 40px;
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+  <div class="flex-item">flex item 1</div>
+  <div class="flex-item">flex item 2</div>
+  <div class="flex-item">flex item 3</div>
+ 
+ <!--div class="flex-item ">
+ <div class="flex-item sub">flex item 11</div>
+ <div class="flex-item sub">flex item 22</div>
+ </div-->
+  <div class="flex-item">flex item 5</div>
+  <div class="flex-item">flex item 6</div>  
+</div><!-- flex container -->
+
+</body>
+</html>

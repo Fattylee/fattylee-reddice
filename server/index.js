@@ -5,7 +5,11 @@ const app = express();
 
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './index.html'));
-})
+});
+
+app.get('/api', (req, res) => {
+  res.send('happy api');
+});
 
 
 const port = process.env.PORT || 7000;

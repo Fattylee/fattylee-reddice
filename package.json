@@ -6,15 +6,16 @@
  "scripts": {
     "test": "jest --watchAll",
     "dev": "nodemon -w server/index.js --exec babel-node server/index.js",
-    "start": "babel-node server/index.js"
+    "start": "node server/app.js",
+    "deploy": "babel server/index.js --out-file=server/app.js"
   },
   "dependencies": {
-    "express": "4.16.4",
-    "@babel/cli": "7.4.4",
-    "@babel/preset-env": "7.4.4"
+    "express": "4.16.4"
   },
   "devDependencies": {
-    "nodemon": "1.19.0"
+    "nodemon": "1.19.0",
+    "@babel/cli": "7.4.4",
+    "@babel/preset-env": "7.4.4"
   },
   "engines": {
     "node": "12.1.0"

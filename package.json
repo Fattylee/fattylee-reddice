@@ -10,7 +10,7 @@
     "deploy": "babel server/index.js --out-file=server/app.js"
   },
   "dependencies": {
-    "express": "4.16.4"
+    "express": "4.19.2"
   },
   "devDependencies": {
     "nodemon": "1.19.0",
